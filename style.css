@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../assets/bg-icon.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-color: #38435F;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+/* scroll bar */
+.on-scrollbar{
+    width: 0.3rem;
+    scrollbar-width: 0.3rem !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE 10+ */
+  }
+  
+.on-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.on-scrollbar::-webkit-scrollbar {
+    width: 6px !important;
+    background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #d4af37;
+}
+
+::-webkit-scrollbar {
+    width: 0.35rem;
+    scrollbar-width: thin;
+    -webkit-box-shadow: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d6b33e;
+    scrollbar-color: #d6b33e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ad8e28;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a09369;
+    -webkit-box-shadow: none !important;
+}
+
+.chat-text-area{
+    resize: none;
+}
+
+.btn-green{
+    transition: color 0.5s ease-in-out !important;
+}
+
+.btn-green:hover{
+    background-color: #005043 !important;
+}
+
+/* .btn-send:hover{
+    background-color: #005043 !important;
+} */
+
+.search-addon:hover{
+    background-color: #8f8f8f !important;
+}
+
+.list-group-item.active {
+    background-color: #ebebeb !important;
+}
+
+.card-header:first-child {
+    border-radius: 0;
+}
+
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: .35rem;
+    border-top-right-radius: .35rem;
+}
+
+.accordion-item:last-of-type .accordion-header .accordion-button.collapsed {
+    border-bottom-right-radius: .35rem;
+    border-bottom-left-radius: .53rem;
+}
+
+ /* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .chat-bubble.float-end.text-white.position-relative{
+        min-width: 25% !important;
+    }
+
+    .container-lg.px-sm-0.px-md-4.py-md-4.pt-lg-4.pt-xl-4.pt-xxl-4{
+        padding-right: 0!important;
+        padding-left: 0!important;
+    }
+
+    #card-content-full{
+        display: none;
+    }
+    #card-content-lite{
+        display: block;
+    }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    .chat-bubble.float-end.text-white.position-relative{
+        min-width: 20% !important;
+    }
+
+    #card-content-full{
+        display: none;
+    }
+    #card-content-lite{
+        display: block;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {  
+    #card-content-full{
+        display: flex;
+    }
+    #card-content-lite{
+        display: none;
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #card-content-full{
+        display: flex;
+    }
+    #card-content-lite{
+        display: none;
+    }
+}
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    #card-content-full{
+        display: flex;
+    }
+    #card-content-lite{
+        display: none;
+    }
+}
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    #card-content-full{
+        display: flex;
+    }
+    #card-content-lite{
+        display: none;
+    }
+}

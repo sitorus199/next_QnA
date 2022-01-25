@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* scroll bar */
+.on-scrollbar{
+    width: 0.3rem;
+    scrollbar-width: 0.3rem !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE 10+ */
+  }
+  
+.on-scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.on-scrollbar::-webkit-scrollbar {
+    width: 6px !important;
+    background-color: transparent;
+}
+
+.on-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #acacac;
+}
+
+::-webkit-scrollbar {
+    width: 0.35rem;
+    scrollbar-width: thin;
+    -webkit-box-shadow: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #111111;
+    scrollbar-color: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #a7a7a7;
+    -webkit-box-shadow: none !important;
+}
+
+.chat-text-area{
+    resize: none;
+}
+
+.btn-green{
+    transition: color 0.5s ease-in-out !important;
+}
+
+.btn-green:hover{
+    background-color: #005043 !important;
+}
+
+/* .btn-send:hover{
+    background-color: #005043 !important;
+} */
+
+
